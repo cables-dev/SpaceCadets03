@@ -1,0 +1,23 @@
+function print_fib ( n ) do;
+    set l 0;
+    set r 1;
+    set fib_result 1;
+
+    if n <= 1 do;
+        print l;
+    elif n <= 3 do;
+        print r;
+    else do;
+        while n > 2 do;
+            add l r into fib_result;
+            copy r to l;
+            copy fib_result to r;
+            decr n;
+        end;
+
+        print fib_result;
+    end;
+end;
+
+set n 4;
+print_fib n;
