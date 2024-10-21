@@ -1,0 +1,12 @@
+function pow ( base exp ) do;
+    set out 1;
+    while exp not 0 do;
+        mul out base into out;
+        decr exp;
+    end;
+    print out;
+end;
+
+set base 5;
+set exp 2;
+pow base exp;
